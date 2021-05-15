@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background-image: url("https://laculturaviajera.com/wp-content/uploads/2018/05/Anakonda_by_MarynaMarston-2-min.jpg");
+    
+    text-align: center;
+    font-family: sans-serif;
+    color:white;
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    
+    display: flex;
+  }
+  
+  span {
+    margin: auto;
+    font-size: 2rem;
+  }
+  
+  
+  .carousel__face:nth-child(1) {
+    background-image: url("https://www.agricultura.gob.ec/wp-content/uploads/2015/12/amazoni%CC%81a-ecuatoriana.png");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("https://www.aldia.com.ec/wp-content/uploads/2021/02/dia-de-la-amazonia-ecuatoriana.jpg");
+      transform: rotateY( 40deg) translateZ(430px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("https://ecuadorstores.com/wp-content/uploads/Paisaje-de-la-amazonia-ecuatoriana.jpg");
+    transform: rotateY( 80deg) translateZ(430px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("https://lh3.googleusercontent.com/proxy/PkGcsI4YtWoExtAPrlMEOIsI-qJBTHRTu1uB5YIPLz8NtDq7YdkQKoh2wGKkNkLAQwY97g82At1qL9SY4R8EvAD23vJDfWuJh1Lv7p-8VdT9pYu7T9AMCOdlm6uykLN90r1VFLmAAhvVqXDGM86X7d76Ae8Mshdj4gwT2g9rmg");
+    transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("https://www.elheraldo.com.ec/wp-content/uploads/2019/09/fixedw_large_2x.jpg");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("https://static.dw.com/image/16603830_303.jpg");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("https://i.eldiario.com.ec/fotos-manabi-ecuador/2019/09/20190905103455_la-amazona-a-ecuatoriana-va-ctima-d.jpg");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("https://www.larepublica.ec/wp-content/uploads/2018/01/guacamayo-azul-634x381.jpg");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("https://www.laselvajunglelodge.com/wp-content/uploads/2019/06/09-bg-program-cloudforest.jpg");
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  

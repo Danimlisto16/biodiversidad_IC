@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Comuna-salango1.jpg/1024px-Comuna-salango1.jpg");
+    text-align: center;
+    font-family: sans-serif;
+    color:white;
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+
+    display: flex;
+  }
+  
+  span {
+    margin: auto;
+    font-size: 2rem;
+  }
+  
+  
+  .carousel__face:nth-child(1) {
+    background-image: url("https://fotoecuador.files.wordpress.com/2011/11/playa_tortuguita_beach_machalilla.jpg?w=640");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("https://ecuadorextremo.com/wp-content/uploads/2016/07/bahiaCS.jpg");
+      transform: rotateY( 40deg) translateZ(430px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("https://lh3.googleusercontent.com/proxy/fIu9msdBTGk8x5f9BpOuT8o5-WW1VU-Ne6OeNzPuVkBxpmP3620sbVsFDkwHpi88DQWukLx57jUTED9e8iZcNqArvmU07BbCgIaoDcyZ4skbJtOT8qybKw6Gt4r-U0AuAkGgCbbi");
+    transform: rotateY( 80deg) translateZ(430px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("https://tomi-digital-resources.storage.googleapis.com/images/classes/resources/rsc-509343-5fdb770eeaa67.jpeg");
+    transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("https://www.newsmillenium.com/wp-content/uploads/2020/10/portada-1-775-costero-marina.jpg");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("https://i.pinimg.com/originals/08/03/95/080395ec441a68c56b8a79091340efca.jpg");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carousel__face:nth-child(7) { 
+    background-image: url("https://farm4.staticflickr.com/3936/14925927654_a06f9967e4.jpg");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("https://i.pinimg.com/originals/be/60/dd/be60ddecc0d295a3a1441d2174031e5f.jpg");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("http://discoverecuadorandmore.com/es/wp-content/uploads/2017/05/Provincia-de-Santa-Elena.png");
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+
+  
+  
